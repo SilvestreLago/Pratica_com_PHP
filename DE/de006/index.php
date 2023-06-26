@@ -17,10 +17,10 @@
             <h1>Anatomia de uma divisão:</h1>
         <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
             <label for="v1">Dividendo</label>
-            <input type="number" name="v1" id="v1" value="<?=$V1?>">
+            <input type="number" name="v1" id="v1" value="<?=$V1?>" required>
 
             <label for="v2">Divisor</label>
-            <input type="number" name="v2" id="v2" value="<?=$V2?>">
+            <input type="number" name="v2" id="v2" value="<?=$V2?>" required>
 
             <input type="submit" value="Dividir">
         </form>

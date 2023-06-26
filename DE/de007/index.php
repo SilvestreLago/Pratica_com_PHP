@@ -19,7 +19,7 @@
         <h1>Informe o seu salário:</h1>
         <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
             <label for="sal">Salário R$:</label>
-            <input type="number" name="v1" id="v1" value="<?=$V1?>">
+            <input type="number" name="v1" id="v1" value="<?=$V1?>" required>
             <input type="submit" value="Calcular">
             <p>Salário mínimo atual: <?=numfmt_format_currency($padrão, $SM, "BRL")?></p>
         </form>
